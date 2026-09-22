@@ -4,14 +4,14 @@
 
 > Portfolio tracker for niche hobbies (Hot Wheels, Gunpla, Mechanical Keyboards) that auto-calculates gain/loss from structured Sanity content. Built to prove why keyword search fails and GROQ succeeds.
 
-![Niche Collector OG](https://niche-collector.vercel.app/opengraph-image)
+![Niche Collector OG](https://sanity-challenge.vercel.app/opengraph-image)
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org)
 [![Sanity](https://img.shields.io/badge/Sanity-6-red)](https://www.sanity.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**Live Demo:** https://niche-collector.vercel.app (after Vercel deploy)  
-**Studio:** `/studio` (NextStudio embedded)  
+**Live Demo:** https://sanity-challenge.vercel.app  
+**Studio:** https://sanity-challenge.vercel.app/studio (or `http://localhost:3000/studio`)  
 **Sanity Project:** `71m89sy5` / dataset `production` (Growth Trial, Active)
 
 ## Why Structured Content?
@@ -108,7 +108,7 @@ npm_config_cache=/tmp/npm-cache npm run dev  # http://localhost:3000
 - **Dataset:** `production`
 - **Organization ID:** `os9xuj7u1`
 - **Dataset URL:** `https://71m89sy5.apicdn.sanity.io/v2024-01-01/data/query/production?query=*[_type=="collectibleItem"]`
-- **Studio URL:** `https://niche-collector.vercel.app/studio` (or `http://localhost:3000/studio`)
+- **Studio URL:** `https://sanity-challenge.vercel.app/studio` (or `http://localhost:3000/studio`)
 
 Required by challenge template — include this ID in your DEV post.
 
@@ -119,8 +119,8 @@ npm run build  # verified ✓ — Route: / , /collection (1m), /studio, /opengra
 # Deploy
 vercel --prod  # or connect GitHub repo to Vercel, set env NEXT_PUBLIC_SANITY_PROJECT_ID
 # Add CORS for production:
-npx sanity cors add https://niche-collector.vercel.app --credentials
-npx sanity cors add https://*.vercel.app --credentials
+npx sanity cors add https://sanity-challenge.vercel.app --credentials
+npx sanity cors add https://sanity-challenge-3uat3hjib-ketutdanas-projects.vercel.app --credentials
 ```
 
 Set `NEXT_PUBLIC_SITE_URL` to your Vercel URL for correct `metadataBase`.
